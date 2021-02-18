@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.3125rem;
+  line-height: 1.3;
+}
+
+.hero-img {
+  min-height: 15vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.name-container {
+  max-width: 35vw;
+  margin: auto 0;
+}
