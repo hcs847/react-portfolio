@@ -50,7 +50,7 @@ const ContactForm = function () {
                         <p className='errorText'>{errorMessage}</p>
                     </div>
                 )}
-                <button className='btn' type='submit'><span className='icon'><IoMdSend /></span>Submit</button>
+                <button className='btn btn-contact' type='submit'><span className='icon'><IoMdSend /></span>Submit</button>
             </form>
         </section>
     )

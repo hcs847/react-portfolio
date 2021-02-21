@@ -4,8 +4,8 @@ import profilePhoto from '../../assets/profile/profile-pic2.jpg'
 const About = () => {
     return (
         <section className='about'>
-            <div className='flex-start' style={{ marginTop: '1em' }}>
-                <img src={profilePhoto} style={{ maxWidth: '20%', borderRadius: '50%' }} />
+            <div className='flex-start profile-container' >
+                <img className='profile-photo' src={profilePhoto} />
                 <h1>About me</h1>
             </div>
             <p>I’ve always had an affinity for problem solving, as my journey took me through Financial Statements to Business Systems analysis and process improvements; It presented many learning opportunities, challenges and rewarding achievements but something was missing. Getting exposed to database querying and automation tools scripting has opened my eyes to even greater challenges and possibilities.</p>

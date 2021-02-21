@@ -57,7 +57,7 @@ const Resume = function () {
         },
     ];
     return (
-        <div>
+        <div className='container-resume'>
             <h1>Resume</h1>
 
             <button className='download btn'>
@@ -71,7 +71,7 @@ const Resume = function () {
             <div>
                 <ul className='technologies'>
                     {technologies.map((tech) => (
-                        <li key={tech.name}>
+                        <li className='technologies__item' key={tech.name}>
                             <span className='icon'>{<tech.icon />}</span>
                             {tech.name}
                         </li>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
 
+
 const Portfolio = function () {
     const [photos] = useState([
         {
@@ -44,7 +45,7 @@ const Portfolio = function () {
 
     const [currentPhoto, setCurrentPhoto] = useState();
     const toggleModal = (image) => {
-        setCurrentPhoto();
+        setCurrentPhoto(image);
         setIsModalOpen(!isModalOpen);
 
     }
@@ -52,24 +53,27 @@ const Portfolio = function () {
 
     return (
         <div>
-            {isModalOpen && <Modal
-                currentPhoto={currentPhoto}
-                onClose={toggleModal} />}
             <h1 >Portfolio</h1>
-            <div className='project-photos-container' >
-                {photos.map((image) => (
-                    <div style={{ position: 'relative' }}>
+
+            <div className='project-photos-container' style={{ position: 'relative' }} >
+                {photos.map((image, i) => (
+                    <div className='project__item' style={{ position: 'relative' }}>
                         <img
                             className='project-image'
-                            // style={{ opacity: '0.2' }}
                             src={require(`../../assets/large/${image.file}`).default}
                             alt={image.title}
-                            key={image.file}
+                            onClick={() => toggleModal(image)}
+                            key={image.title}
                         />
-                        <div style={{ display: 'none' }} className='overlay-text'>{image.deployedApp}</div>
+                        {/* rendering effects for clicked image */}
+                        {(isModalOpen && image === currentPhoto) ? <Modal
+                            currentPhoto={currentPhoto}
+                            onClose={toggleModal} /> : ''}
                     </div>
                 ))}
+
             </div>
+
         </div>
     )
 };

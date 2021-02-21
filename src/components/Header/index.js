@@ -18,7 +18,7 @@ function Header({ currentPage, handlePageChange }) {
             <div className='hero-img' style={{ backgroundImage: `url(${coverImage})` }}>
 
                 <div className="gears-container">
-                    <div className='flex-center'>
+                    <div className='flex-center-gears'>
                         <img className='gear-one' src={gearOne} alt='gear 1' />
                         <img className='gear-two' src={gearTwo} alt='gear 2' />
                         <img className='gear-three' src={gearThree} alt='gear 3' />
