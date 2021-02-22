@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Project from './components/Project';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import PagesContainer from './components/PagesContainer';
@@ -19,7 +19,7 @@ function App() {
         );
       case 'Portfolio':
         return (
-          <Portfolio />
+          <Project />
         );
       case 'Contact':
         return (

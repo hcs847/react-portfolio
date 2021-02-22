@@ -26,6 +26,7 @@ const ContactForm = function () {
     function hanldeSubmit(e) {
         e.preventDefault();
         console.log(formState);
+        setFormState({ name: '', email: '', message: '' })
     }
 
     return (

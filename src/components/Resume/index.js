@@ -68,8 +68,8 @@ const Resume = function () {
             </button>
 
             <h2>Technologies</h2>
-            <div>
-                <ul className='technologies'>
+            <div className='technologies'>
+                <ul className='technologies__list'>
                     {technologies.map((tech) => (
                         <li className='technologies__item' key={tech.name}>
                             <span className='icon'>{<tech.icon />}</span>
