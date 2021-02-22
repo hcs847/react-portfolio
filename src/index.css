@@ -1,13 +1,434 @@
+:root {
+  --dark-teal: rgb(47, 74, 75);
+  --light-teal: rgb(97, 141, 137);
+  --dark-gray: rgb(40,54,57);
+  --dark-blue: rgb(12,42,76);
+  --mid-grey: rgb(90,103,119);
+  --light: rgb(218, 225,227);
+
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:var(--light);
+}
+
+main {
+  position: relative;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top:100%;
+}
+
+footer a {
+  font-size: 2rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--dark-blue);
+  margin-top: 0;
+}
+img {
+  width:100%;
+}
+
+.container {
+  width: 95%;
+}
+
+.gears-container, .container-resume {
+  margin: 0 auto;
+}
+
+.container-resume {
+  max-width: 70vw;
+}
+
+.gear-one{
+  margin-top: 2vh;
+  animation: gears 5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  transform-origin: center;
+}
+
+.gear-two {
+  margin-top: -8vh;
+  animation: gear2 6.5s cubic-bezier(0.34, 1.56, 0.64, 1) ;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  transform-origin: center;
+}
+
+.gear-three {
+  margin-top: 2vh;
+  animation: gears 5s cubic-bezier(0.34, 1.56, 0.64, 1) ;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  transform-origin: center;
+}
+
+.nav-bar {
+  background-color: var(--light-teal);
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight:900;  
+ text-align: center;
+  line-height: 1;
+  margin:0.9rem;
+}
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+.btn {
+  border-radius: 0.8rem;
+    display: block;
+    cursor: pointer;
+    margin: 0 0 0.5rem 1rem;
+    padding: 0.5em 1em;
+    width: 40%;
+}
+.btn-contact {
+  margin: 1rem auto;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.icon {
+  margin: auto 0.5em;
+}
+
+.hero-img {
+  min-height: 10vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.flex-center-gears {
+  display: flex;
+  max-width: 10%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    justify-content: center;
+}
+
+.svg-text {
+  max-width: 25%;
+  align-self: center;
+  
+}
+.svg-text-gears {
+  max-width: 35%;
+  align-self: center;
+}
+
+nav {
+  width:66%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  gap:0.5rem;
+}
+  
+.nav__list {
+  gap:0.5rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__item {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-right: 0.5rem;
+}
+a, .nav-link, .nav-link-active  {
+  text-decoration: none;
+  cursor:pointer;
+  color: var(--med-gray);
+  position: relative;
+  
+}
+
+.download a {
+  color:var(--dark-blue);
+  font-weight: 600; 
+}
+.download.btn {
+  width:61%;
+  margin: 0 auto;
+}
+
+.overlay-text a {
+  color: var(--light);
+  font-weight: 700;
+}
+
+.nav-link-active:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  bottom:-4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: var(--dark-blue);
+} 
+
+.about {
+  max-width:90%;
+  margin: 0 auto;
+}
+.about h1 {
+  align-self: center; 
+}
+
+.profile-container {
+  margin-top: 1rem;
+}
+
+.profile-container h1 {
+  margin:0;
+}
+.profile-photo {
+max-width: 13%;
+border-radius: 50%;
+}
+
+ 
+
+.project-photos-container
+{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.project-image {
+  max-width:100%;
+  margin: 0 auto;
+  
+}
+
+.no-display {
+  display: none;
+}
+
+.display {
+  display: inline;
+}
+
+.overlay-text {
+  background: rgba(39,62,84,0.82);
+  background: linear-gradient(rgba(97, 141, 137, 0.9), rgba(12,42,76, 0.8));
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border:solid 0.5rem var(--mid-grey);
+    top: 0;
+    bottom: 0;
+}
+
+.overlay-text h2,h3,h4 {
+  margin:0.3rem;
+}
+
+#contact-form {
+max-width: 55%;
+margin: 0 auto;
+}
+ 
+form label, form input, form textarea {
+  display:block;
+  width:100%;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.technologies {
+  margin: 1rem auto;
+  max-width:75%;
+}
+
+.technologies__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+li.technologies__item {
+  font-size: 1.5rem;
+}
+
+.footer-icons {
+  max-width: 40%; 
+  margin: 0 auto; 
+  color: var(--dark-blue);
+}
+
+/* media querries */
+/* ============= */
+@media (min-width: 600px){ 
+  a, .nav-link, .nav-link-active {
+    font-size: 1.2rem;
+}
+.gear-two {
+  margin-top: -10vh;
+}
+.download.btn {
+  width:65%;
+}
+}
+
+@media (min-width: 900px){ 
+
+  .about {
+    max-width: 80%;
+  }
+  a, .nav-link, .nav-link-active {
+    font-size: 1.3rem;
+}
+.project-photos-container {
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.project-image {
+  max-height: 39vh;
+  flex-grow: 1;
+  max-width: 39vw; 
+}
+.gear-two {
+  margin-top: -10vh;
+}
+
+/* .technologies {
+  max-width:50%;
+} */
+.download.btn {
+  width:45%;
+}
+}
+
+@media (min-width: 1200px){ 
+  a, .nav-link, .nav-link-active {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.about {
+  max-width: 60vw;
+}
+
+#contact-form {
+  max-width: 35%;
+}
+
+/* .technologies {
+  max-width:33%;
+} */
+
+.download.btn {
+  width:36%;
+ 
+}
+
+}
+
+@media (min-width: 1500px){ 
+  body {
+    font-size: 1.2rem;
+  }
+  a, .nav-link, .nav-link-active {
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+.about {
+  max-width: 45vw;
+}
+
+.download.btn {
+  width:30%;
+}
+
+li.technologies__item {
+  font-size: 1.3rem;
+}
+
+.gear-two {
+  margin-top: -15vh;
+}
+
+}
+
+/* animation */
+/* ========= */
+@keyframes gear2 {
+  0%   {transform:  rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+  @keyframes gears {
+    0%   {transform:   rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+    }
+
+  
