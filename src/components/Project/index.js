@@ -59,11 +59,11 @@ const Project = function () {
                 {photos.map((image, i) => (
                     <div className='project__item' style={{ position: 'relative' }}>
                         <img
+                            key={image.title}
                             className='project-image'
                             src={require(`../../assets/large/${image.file}`).default}
                             alt={image.title}
                             onClick={() => toggleModal(image)}
-                            key={image.title}
                         />
                         {/* rendering effects for clicked image */}
                         {(isModalOpen && image === currentPhoto) ? <Modal
