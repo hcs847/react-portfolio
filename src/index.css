@@ -24,7 +24,7 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  top:100%;
+  top:98%;
 }
 
 footer a {
@@ -230,6 +230,7 @@ a, .nav-link, .nav-link-active  {
 .about {
   max-width:90%;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 .about h1 {
   align-self: center; 
@@ -291,6 +292,7 @@ border-radius: 50%;
 #contact-form {
 max-width: 55%;
 margin: 0 auto;
+padding-bottom: 2rem;
 }
  
 form label, form input, form textarea {
@@ -350,6 +352,7 @@ li.technologies__item {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 1rem;
+  padding-bottom: 2rem;
 }
 
 .project-image {
