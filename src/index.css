@@ -20,11 +20,7 @@ main {
   position: relative;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top:98%;
+  margin-top:auto;
 }
 
 footer a {
