@@ -210,6 +210,11 @@ a, .nav-link, .nav-link-active  {
   color: var(--light);
   font-weight: 700;
 }
+.modal-text {
+  font-size:1.2rem;
+  color: var(--dark-blue);
+  font-weight: 400;
+}
 
 .nav-link-active:after {
   content: '';
@@ -298,6 +303,7 @@ form label, form input, form textarea {
   border-radius: 0.5rem;
   font-size: 1rem;
 }
+
 .technologies {
   margin: 1rem auto;
   max-width:75%;
