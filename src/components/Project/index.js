@@ -5,16 +5,22 @@ import Modal from '../Modal';
 const Project = function () {
     const [photos] = useState([
         {
-            title: "Your Money Maker",
-            file: 'money-maker.png',
-            deployedApp: 'https://hcs847.github.io/money-maker/',
-            githubRepo: 'https://github.com/hcs847/money-maker'
+            title: "Potluck Planner ",
+            file: 'potluck-planner.png',
+            deployedApp: 'https://your-potluck-planner.herokuapp.com/',
+            githubRepo: 'https://github.com/hcs847/potluck-planner'
         },
         {
             title: "The Private Network",
             file: 'the-private-network.png',
             deployedApp: 'https://the-private-network.herokuapp.com/',
             githubRepo: 'https://github.com/hcs847/the-private-network'
+        },
+        {
+            title: "Your Money Maker",
+            file: 'money-maker.png',
+            deployedApp: 'https://hcs847.github.io/money-maker/',
+            githubRepo: 'https://github.com/hcs847/money-maker'
         },
         {
             title: "Weather Dashboard",
@@ -35,12 +41,7 @@ const Project = function () {
             deployedApp: 'https://thetechblogs.herokuapp.com/',
             githubRepo: 'https://github.com/hcs847/tech-blogs'
         },
-        {
-            title: "Password generator ",
-            file: 'pass-generator.png',
-            deployedApp: 'https://hcs847.github.io/pass-generator/',
-            githubRepo: 'https://github.com/hcs847/pass-generator'
-        },
+
     ]);
 
     const [currentPhoto, setCurrentPhoto] = useState();
