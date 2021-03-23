@@ -245,11 +245,9 @@ a, .nav-link, .nav-link-active  {
   margin:0;
 }
 .profile-photo {
-max-width: 13%;
+max-width: 8%;
 border-radius: 50%;
 }
-
- 
 
 .project-photos-container
 {
@@ -258,6 +256,10 @@ border-radius: 50%;
   gap:1rem;
   max-width: 80%;
   margin: 0 auto;
+}
+
+.project__item {
+  cursor: pointer;
 }
 
 .project-image {

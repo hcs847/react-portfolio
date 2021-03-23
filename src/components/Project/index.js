@@ -18,7 +18,7 @@ const Project = function () {
         },
         {
             title: "Your Money Maker",
-            file: 'money-maker.png',
+            file: 'money-maker-new.png',
             deployedApp: 'https://hcs847.github.io/money-maker/',
             githubRepo: 'https://github.com/hcs847/money-maker'
         },
@@ -31,7 +31,7 @@ const Project = function () {
 
         {
             title: "Javascript Quiz",
-            file: 'js-quiz.png',
+            file: 'js-quiz-new.png',
             deployedApp: 'https://hcs847.github.io/quiz/',
             githubRepo: 'https://github.com/hcs847/quiz'
         },
