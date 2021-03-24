@@ -24,7 +24,7 @@ const Project = function () {
         },
         {
             title: "Weather Dashboard",
-            file: 'weather-app.png',
+            file: 'weather.png',
             deployedApp: 'https://hcs847.github.io/weather-forecast-dashboard/',
             githubRepo: 'https://github.com/hcs847/weather-forecast-dashboard'
         },
@@ -37,7 +37,7 @@ const Project = function () {
         },
         {
             title: "The Tech Blogs ",
-            file: 'tech-blogs.png',
+            file: 'tech-blogs-new.png',
             deployedApp: 'https://thetechblogs.herokuapp.com/',
             githubRepo: 'https://github.com/hcs847/tech-blogs'
         },
