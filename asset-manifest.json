@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.d16a1630.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.5f210ac7.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.5f210ac7.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.2f7d7868.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.2f7d7868.js.map",
+    "main.css": "/react-portfolio/static/css/main.cfeadde4.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.9c6d6a72.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.9c6d6a72.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.4bbafadb.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.4bbafadb.js.map",
     "static/js/2.89f206ef.chunk.js": "/react-portfolio/static/js/2.89f206ef.chunk.js",
     "static/js/2.89f206ef.chunk.js.map": "/react-portfolio/static/js/2.89f206ef.chunk.js.map",
-    "static/js/3.286cfda6.chunk.js": "/react-portfolio/static/js/3.286cfda6.chunk.js",
-    "static/js/3.286cfda6.chunk.js.map": "/react-portfolio/static/js/3.286cfda6.chunk.js.map",
+    "static/js/3.02acca09.chunk.js": "/react-portfolio/static/js/3.02acca09.chunk.js",
+    "static/js/3.02acca09.chunk.js.map": "/react-portfolio/static/js/3.02acca09.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "static/css/main.d16a1630.chunk.css.map": "/react-portfolio/static/css/main.d16a1630.chunk.css.map",
+    "static/css/main.cfeadde4.chunk.css.map": "/react-portfolio/static/css/main.cfeadde4.chunk.css.map",
     "static/js/2.89f206ef.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.89f206ef.chunk.js.LICENSE.txt",
     "static/media/gear1.93acae5c.svg": "/react-portfolio/static/media/gear1.93acae5c.svg",
     "static/media/gear2.7c5bf8ef.svg": "/react-portfolio/static/media/gear2.7c5bf8ef.svg",
@@ -25,15 +25,17 @@
     "static/media/pass-generator.png": "/react-portfolio/static/media/pass-generator.acf9c975.png",
     "static/media/potluck-planner.png": "/react-portfolio/static/media/potluck-planner.edb96532.png",
     "static/media/profile-3.4977ea4b.jpg": "/react-portfolio/static/media/profile-3.4977ea4b.jpg",
+    "static/media/tech-blogs-new.png": "/react-portfolio/static/media/tech-blogs-new.d8055fb3.png",
     "static/media/tech-blogs.png": "/react-portfolio/static/media/tech-blogs.2294623e.png",
     "static/media/text.42dd3b57.svg": "/react-portfolio/static/media/text.42dd3b57.svg",
     "static/media/the-private-network.png": "/react-portfolio/static/media/the-private-network.8a914bfd.png",
-    "static/media/weather-app.png": "/react-portfolio/static/media/weather-app.3879ece4.png"
+    "static/media/weather-app.png": "/react-portfolio/static/media/weather-app.3879ece4.png",
+    "static/media/weather.png": "/react-portfolio/static/media/weather.a6e0c375.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2f7d7868.js",
+    "static/js/runtime-main.4bbafadb.js",
     "static/js/2.89f206ef.chunk.js",
-    "static/css/main.d16a1630.chunk.css",
-    "static/js/main.5f210ac7.chunk.js"
+    "static/css/main.cfeadde4.chunk.css",
+    "static/js/main.9c6d6a72.chunk.js"
   ]
 }
