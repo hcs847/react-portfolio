@@ -3,7 +3,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Project from './components/Project';
 import ContactForm from './components/Contact';
-import Resume from './components/Resume';
+import Technologies from './components/Technologies';
 import PagesContainer from './components/PagesContainer';
 import Footer from './components/Footer';
 
@@ -25,9 +25,9 @@ function App() {
         return (
           <ContactForm />
         );
-      case 'Resume':
+      case 'Technologies':
         return (
-          <Resume />
+          <Technologies />
         );
       default:
         return (

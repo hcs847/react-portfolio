@@ -58,14 +58,14 @@ const Resume = function () {
     ];
     return (
         <div className='container-resume'>
-            <h1>Resume</h1>
+            {/* <h1>Resume</h1>
 
             <button className='download btn'>
                 <a href={require(`../../assets/resume/hila-caspi-cv.pdf`).default}
                     download>
                     <span className='icon'>< FiDownload /></span>Download my resume
             </a>
-            </button>
+            </button> */}
 
             <h2>Technologies</h2>
             <div className='technologies'>
