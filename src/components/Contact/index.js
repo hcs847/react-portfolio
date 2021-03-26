@@ -38,7 +38,7 @@ const ContactForm = function () {
     function hanldeSubmit(e) {
         e.preventDefault();
         console.log("formState", formState);
-        // emailjs handling
+        // emailjs handling to route form responses to gmail
         emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE, e.target, process.env.REACT_APP_USER_ID)
             .then((result) => {
                 console.log(result.text);
