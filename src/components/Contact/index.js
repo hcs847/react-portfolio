@@ -1,14 +1,23 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 import { IoMdSend } from "react-icons/io";
+import emailjs from 'emailjs-com';
+require('dotenv').config();
 
 const ContactForm = function () {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
-
+    // form field changes for state
+    const handleChangeForm = (e) => {
+        const { name, value } = e.target;
+        setFormState({
+            ...formState,
+            [name]: value
+        })
+    }
     // form validation
-    function handleChange(e) {
+    function handleError(e) {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
             !isValid ? setErrorMessage('Please enter a valid email address') : setErrorMessage('');
@@ -23,9 +32,20 @@ const ContactForm = function () {
         }
     }
 
+
+
+
     function hanldeSubmit(e) {
         e.preventDefault();
-        console.log(formState);
+        console.log("formState", formState);
+        // emailjs handling
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE, e.target, process.env.REACT_APP_USER_ID)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
         setFormState({ name: '', email: '', message: '' })
     }
 
@@ -35,20 +55,40 @@ const ContactForm = function () {
             <form id='contact-form' onSubmit={hanldeSubmit}>
                 <div >
                     <label htmlFor="name">Name:</label>
-                    <input type="text" defaultValue={name} onBlur={handleChange} name='name' />
+                    <input
+                        placeholder="Full Name"
+                        type="text"
+                        name='name'
+                        value={name}
+                        onChange={handleChangeForm}
+                        onBlur={handleError}
+                    />
                 </div>
                 <div >
                     <label htmlFor="email">Email address:</label>
-                    <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
+                    <input
+                        placeholder="Your email"
+                        type="email"
+                        name="email"
+                        value={email}
+                        onChange={handleChangeForm}
+                        onBlur={handleError}
+                    />
                 </div>
                 <div >
                     <label htmlFor="message">Message:</label>
-                    <textarea name='message' defaultValue={message} onBlur={handleChange} rows='5' />
+                    <textarea
+                        placeholder="Your message"
+                        name='message'
+                        value={message}
+                        onChange={handleChangeForm}
+                        onBlur={handleError}
+                        rows='5' />
                 </div>
                 {/* if error messages are available render it */}
                 {errorMessage && (
                     <div>
-                        <p className='errorText'>{errorMessage}</p>
+                        <p className='error-text'>{errorMessage}</p>
                     </div>
                 )}
                 <button className='btn btn-contact' type='submit'><span className='icon'><IoMdSend /></span>Submit</button>
