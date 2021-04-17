@@ -7,8 +7,8 @@ const Modal = function ({ onClose, currentPhoto }) {
     return (
         <div className='overlay-text flex-col'
         >
-            <h2 className='flex-col'><a href={deployedApp} target="_blank"><span className="modal-text">Go to deployed app: </span>{title}</a></h2>
-            <h3 className='flex-col'><a href={githubRepo} target="_blank"><span className="modal-text">Checkout my GitHub Repo: </span><FaGithub /></a></h3>
+            <h2 className='flex-col'><a href={deployedApp} target="_blank"><span className='deployed-app'>{title}</span></a></h2>
+            <h3 className='flex-col'><a href={githubRepo} target="_blank"><span className='modal-bold'> GitHub Repo: </span><FaGithub /></a></h3>
             <h4 className='flex-col'><a href='#' onClick={onClose} ><AiFillCloseCircle /></a></h4>
         </div>
 

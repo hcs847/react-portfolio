@@ -32,9 +32,6 @@ const ContactForm = function () {
         }
     }
 
-
-
-
     function hanldeSubmit(e) {
         e.preventDefault();
         console.log("formState", formState);
@@ -53,33 +50,36 @@ const ContactForm = function () {
         <section>
             <h1>Contact me</h1>
             <form id='contact-form' onSubmit={hanldeSubmit}>
-                <div >
-                    <label htmlFor="name">Name:</label>
+                <div className='form-input'>
+                    {/* <label htmlFor="name">Name:</label> */}
                     <input
                         placeholder="Full Name"
                         type="text"
                         name='name'
+                        id='name'
                         value={name}
                         onChange={handleChangeForm}
                         onBlur={handleError}
                     />
                 </div>
-                <div >
-                    <label htmlFor="email">Email address:</label>
+                <div className='form-input'>
+                    {/* <label htmlFor="email">Email address:</label> */}
                     <input
-                        placeholder="Your email"
+                        placeholder="Enter email"
                         type="email"
                         name="email"
+                        id='email'
                         value={email}
                         onChange={handleChangeForm}
                         onBlur={handleError}
                     />
                 </div>
-                <div >
-                    <label htmlFor="message">Message:</label>
+                <div className='form-input'>
+                    {/* <label htmlFor="message">Message:</label> */}
                     <textarea
                         placeholder="Your message"
                         name='message'
+                        id='message'
                         value={message}
                         onChange={handleChangeForm}
                         onBlur={handleError}

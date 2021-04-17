@@ -84,8 +84,10 @@ h3 {
     display: block;
     cursor: pointer;
     margin: 0 0 0.5rem 1rem;
-    padding: 0.5em 1em;
+    padding: 0.2em 1em;
     width: 40%;
+    background-color: white;
+    border: 0;
 }
 .btn-contact {
   margin: 1rem auto;
@@ -144,7 +146,9 @@ h3 {
   max-width: 35%;
   align-self: center;
 }
-
+svg {
+  vertical-align: middle;
+}
 nav {
   width:66%;
   display: flex;
@@ -171,8 +175,11 @@ a, .nav-link, .nav-link-active  {
   text-decoration: none;
   cursor:pointer;
   color: var(--med-gray);
-  position: relative;
-  
+  position: relative; 
+}
+
+.nav-link:hover {
+  color:white;
 }
 
 .download a {
@@ -188,6 +195,48 @@ a, .nav-link, .nav-link-active  {
   color: var(--light);
   font-weight: 700;
 }
+
+.deployed-app {
+  background-color: var(--light);
+  color:var(--dark-blue);
+  padding: 0.2em 0.4em;
+}
+
+.deployed-app:hover {
+  border: 2px solid var(--dark-blue);
+}
+
+.modal-bold{
+  position: relative;
+  font-weight: 600;
+}
+
+.modal-bold::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  background: var(--light);
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom:-3px;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: right;
+  transform-origin: right;
+}
+
+.modal-bold:hover::after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+
+}
+
 .modal-text {
   font-size:1.2rem;
   color: var(--dark-blue);
@@ -260,18 +309,18 @@ border-radius: 50%;
 
 .overlay-text {
   background: rgba(39,62,84,0.82);
-  background: linear-gradient(rgba(97, 141, 137, 0.9), rgba(12,42,76, 0.8));
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    border:solid 0.5rem var(--mid-grey);
-    top: 0;
-    bottom: 0;
+  background: linear-gradient(rgb(97, 141, 137), rgba(12,42,76));
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border:solid 0.5rem var(--mid-grey);
+  top: 0;
+  bottom: 0;
 }
 
 .overlay-text h2,h3,h4 {
-  margin:0.3rem;
+  margin:0.2rem;
 }
 
 #contact-form {
@@ -288,8 +337,25 @@ form label, form input, form textarea {
   display:block;
   width:100%;
   line-height: 1.5;
-  border-radius: 0.5rem;
+  font-family: 'Neuton', serif;
   font-size: 1rem;
+  outline: none;
+  border: 0;
+  padding-left: 0.2em;
+}
+
+.form-input + .form-input {
+  border-top: 1px var(--light) solid;
+}
+
+#name {
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+
+#message {
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
 }
 
 .technologies {
