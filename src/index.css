@@ -8,7 +8,14 @@
   
 }
 
-*{
+.light-color {
+  color:var(--light)
+}
+
+*,
+*::after,
+*::after
+{
   box-sizing: border-box;
 }
 
@@ -89,6 +96,7 @@ h3 {
     background-color: white;
     border: 0;
 }
+
 .btn-contact {
   margin: 1rem auto;
   width: 100%;
@@ -97,6 +105,11 @@ h3 {
 
 .icon {
   margin: auto 0.5em;
+}
+
+
+.v-align {
+  vertical-align: middle;
 }
 
 .hero-img {
@@ -146,9 +159,7 @@ h3 {
   max-width: 35%;
   align-self: center;
 }
-svg {
-  vertical-align: middle;
-}
+
 nav {
   width:66%;
   display: flex;
@@ -197,18 +208,48 @@ a, .nav-link, .nav-link-active  {
 }
 
 .deployed-app {
-  background-color: var(--light);
   color:var(--dark-blue);
   padding: 0.2em 0.4em;
+  position: relative;
+  z-index: 1;
 }
 
-.deployed-app:hover {
-  border: 2px solid var(--dark-blue);
+.deployed-app::after {
+  content:'';
+  position:absolute;
+  top: 0;
+  left: 0.5rem;
+  right: -0.5rem;
+  bottom: -31px;
+  width: calc(100% - 1rem);
+  height: 100%;
+  background: var(--light);
+  z-index: -1;
+  transform: scaleY(0.05);
+  transform-origin: bottom;
+  transition: transform 200ms ease-in;
+}
+.deployed-app:hover::after {
+  transform: scaleY(1);
 }
 
 .modal-bold{
   position: relative;
   font-weight: 600;
+}
+
+.x-icon {
+  position:absolute;
+  top:0;
+  left:0;
+  padding: 0;
+  margin: 0;
+}
+
+.github-icon {
+  color: var(--dark-blue);
+  background-color: var(--light);
+  border-radius: 50%;
 }
 
 .modal-bold::after {
@@ -288,8 +329,7 @@ border-radius: 50%;
 
 .project__item {
   cursor: pointer; 
-  
-
+  position: relative;
 }
 
 .project-image {
@@ -421,6 +461,7 @@ li.technologies__item {
   flex-direction: row;
   gap: 1rem;
   padding-bottom: 2rem;
+  position: relative;
 }
 
 .project-image {

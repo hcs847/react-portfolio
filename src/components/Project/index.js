@@ -45,31 +45,35 @@ const Project = function () {
     ]);
 
     const [currentPhoto, setCurrentPhoto] = useState();
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const toggleModal = (image) => {
         setCurrentPhoto(image);
         setIsModalOpen(!isModalOpen);
 
-    }
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    };
 
     return (
         <div className='project'>
             <h1 >Portfolio</h1>
 
-            <div className='project-photos-container' style={{ position: 'relative' }} >
+            <div className='project-photos-container'>
                 {photos.map((image, i) => (
-                    <div className='project__item' style={{ position: 'relative' }}>
+                    <div className='project__item'
+                        key={image.file}
+                        onMouseEnter={() => toggleModal(image)}
+                    >
                         <img
-                            key={image.title}
                             className='project-image'
                             src={require(`../../assets/large/${image.file}`).default}
                             alt={image.title}
-                            onClick={() => toggleModal(image)}
+
                         />
                         {/* rendering effects for clicked image */}
                         {(isModalOpen && image === currentPhoto) ? <Modal
                             currentPhoto={currentPhoto}
-                            onClose={toggleModal} /> : ''}
+                            image={image}
+                            toggleModal={toggleModal}
+                        /> : ''}
                     </div>
                 ))}
 
