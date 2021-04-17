@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.9a4c66c6.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.8caed704.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.8caed704.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.af6746a9.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.9d7510a0.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.9d7510a0.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.ea43f916.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.ea43f916.js.map",
     "static/js/2.f3c1b983.chunk.js": "/react-portfolio/static/js/2.f3c1b983.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.2bf1c3bd.chunk.js": "/react-portfolio/static/js/3.2bf1c3bd.chunk.js",
     "static/js/3.2bf1c3bd.chunk.js.map": "/react-portfolio/static/js/3.2bf1c3bd.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "static/css/main.9a4c66c6.chunk.css.map": "/react-portfolio/static/css/main.9a4c66c6.chunk.css.map",
+    "static/css/main.af6746a9.chunk.css.map": "/react-portfolio/static/css/main.af6746a9.chunk.css.map",
     "static/js/2.f3c1b983.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.f3c1b983.chunk.js.LICENSE.txt",
     "static/media/gears.8a9d2524.png": "/react-portfolio/static/media/gears.8a9d2524.png",
     "static/media/gears.fed41326.svg": "/react-portfolio/static/media/gears.fed41326.svg",
     "static/media/js-quiz-new.png": "/react-portfolio/static/media/js-quiz-new.7dfc4d56.png",
     "static/media/money-maker-new.png": "/react-portfolio/static/media/money-maker-new.69f637cf.png",
-    "static/media/name.881e7500.svg": "/react-portfolio/static/media/name.881e7500.svg",
+    "static/media/name.61b5238c.svg": "/react-portfolio/static/media/name.61b5238c.svg",
     "static/media/potluck-planner.png": "/react-portfolio/static/media/potluck-planner.edb96532.png",
     "static/media/profile-3.4977ea4b.jpg": "/react-portfolio/static/media/profile-3.4977ea4b.jpg",
     "static/media/tech-blogs-new.png": "/react-portfolio/static/media/tech-blogs-new.d8055fb3.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.ea43f916.js",
     "static/js/2.f3c1b983.chunk.js",
-    "static/css/main.9a4c66c6.chunk.css",
-    "static/js/main.8caed704.chunk.js"
+    "static/css/main.af6746a9.chunk.css",
+    "static/js/main.9d7510a0.chunk.js"
   ]
 }
