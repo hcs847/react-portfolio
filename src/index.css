@@ -74,7 +74,7 @@ h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
   font-weight:900;  
  text-align: center;
-  line-height: 1;
+  line-height: 1.4;
   margin:0.9rem;
 }
 h1 {
@@ -300,6 +300,7 @@ a, .nav-link, .nav-link-active  {
   max-width:90%;
   margin: 0 auto;
   padding-bottom: 2rem;
+  font-size: 1.6rem;
 }
 .about h1 {
   align-self: center; 
@@ -365,8 +366,9 @@ border-radius: 50%;
 
 #contact-form {
 max-width: 55%;
-margin: 0 auto;
+margin: 3rem auto;
 padding-bottom: 2rem;
+min-height: 33vh;
 }
 
 .error-text {
@@ -401,6 +403,7 @@ form label, form input, form textarea {
 .technologies {
   margin: 1rem auto;
   max-width:75%;
+  min-height: 33vh;
 }
 
 .technologies__list {
