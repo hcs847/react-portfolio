@@ -19,7 +19,7 @@ const Project = function () {
         {
             title: "Your Money Maker",
             file: 'money-maker-new.png',
-            deployedApp: 'https://hcs847.github.io/money-maker/',
+            deployedApp: 'https://your-money-maker.netlify.app/',
             githubRepo: 'https://github.com/hcs847/money-maker'
         },
         {
